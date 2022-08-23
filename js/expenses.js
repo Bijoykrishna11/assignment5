@@ -1,9 +1,23 @@
+function nameAdded() {
+
+}
+
+
+// })
+
+document.getElementById('select-btn').addEventListener('click', function () {
+
+
+    const playerName = document.getElementById('neymar');
+    const playerNameString = playerName.innerText;
 
 
 
 
+    // const coaseFinal = parseFloat(coaseInputString);
 
 
+})
 
 
 
@@ -42,7 +56,7 @@
 document.getElementById('players-expenses').addEventListener('click', function () {
     console.log('click');
 
-    const
+
 
 })
 
