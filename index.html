@@ -59,8 +59,19 @@
 
                     <h1 class="card-title justify-center text-3xl   my-5 text-white">Budget</h1>
 
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra w-full">
 
+                            <tbody>
 
+                                <tr>
+                                    <th>1</th>
+                                    <td>Cy Ganderton</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
 
@@ -104,22 +115,29 @@
 
 
 
-                <div class="card w-96 bg-base-100 shadow-xl  bg-black text-white text-center">
+                <div class="card w-96 bg-base-100 shadow-xl  bg-black text-white text-center ">
 
                     <h1 class="card-title justify-center  font-bold my-5 text-white">Budget</h1>
 
-                    <h3>Per Player <span><input class="text-black" type="text"></span></h3>
+                    <h3>Per Player: <span id="expenses-field"><input class="text-black" type="text"></span></h3>
                     <div class="card-actions justify-center">
-                        <button class="bg-sky-600 px-20 py-2   text-white mt-5">Calculate</button>
+                        <button id="players-expenses" class="bg-sky-600 px-20 py-2   text-white mt-5">Calculate</button>
                     </div>
 
-                    <h3 class="mt-5">Player Expenses $<span>5000</span></h3>
-                    <h3 class="my-4">Per Player <span><input class="text-black" type="text"></span></h3>
-                    <h3>Per Player <span><input class="text-black" type="text"></span></h3>
-                    <div class="card-actions justify-center">
-                        <button class="bg-sky-600 px-20 py-2  text-white mt-5">Calculate</button>
+                    <h3 class="mt-5">Player Expenses $<span id="play-cost">00</span></h3>
+                    <div class=" flex justify-center ">
+                        <h3>Manager:</h3>
+                        <input id="manager-input" class="text-black" type="text">
                     </div>
-                    <h3 class="mt-5">Player Expenses $<span>5000</span></h3>
+                    <div class=" flex justify-center mt-2 ">
+                        <h3>Coach:</h3>
+                        <input id="coase-input" class="text-black" type="text">
+                    </div>
+                    <div class="card-actions justify-center">
+                        <button id="calculate-btn" class="bg-sky-600 px-20 py-2  text-white mt-5">Calculate
+                            Total</button>
+                    </div>
+                    <h3 class="mt-5">Total $<span id="total-cost">00</span></h3>
 
                 </div>
 
@@ -132,6 +150,9 @@
         <hr>
         <h3 class="text-center text-white mx-auto py-12">Copyright @ 2022 All Rights Reserved.</h3>
     </footer>
+
+
+    <script src="js/expenses.js"></script>
 
 </body>
 
