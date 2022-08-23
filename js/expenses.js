@@ -1,49 +1,3 @@
-function nameAdded() {
-
-}
-
-
-// })
-
-document.getElementById('select-btn').addEventListener('click', function () {
-
-
-    const playerName = document.getElementById('neymar');
-    const playerNameString = playerName.innerText;
-
-
-
-
-    // const coaseFinal = parseFloat(coaseInputString);
-
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -56,7 +10,9 @@ document.getElementById('select-btn').addEventListener('click', function () {
 document.getElementById('players-expenses').addEventListener('click', function () {
     console.log('click');
 
-
+    const coaseInput = document.getElementById('coase-input');
+    const coaseInputString = coaseInput.value;
+    const coaseFinal = parseFloat(coaseInputString);
 
 })
 
@@ -85,8 +41,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const totalCostFinal = parseFloat(totalCostString);
     const totalExpenses = coaseFinal + managerFinal + playCostFinal;
 
-
     totalCost.innerText = totalExpenses;
 
-
 })
+
