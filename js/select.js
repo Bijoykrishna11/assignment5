@@ -13,7 +13,6 @@ for (let index = 0; index < selectBtn.length; index++) {
         } else {
             const playerName = selectBtn[index].parentNode.parentNode.children[0].innerHTML;
 
-
             const newPlayer = document.createElement('li');
 
             newPlayer.innerText = playerName;

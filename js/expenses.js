@@ -1,24 +1,17 @@
 
-
-
-
-
-
-
-
-
 document.getElementById('players-expenses').addEventListener('click', function () {
-    console.log('click');
 
-    const coaseInput = document.getElementById('coase-input');
-    const coaseInputString = coaseInput.value;
-    const coaseFinal = parseFloat(coaseInputString);
 
+    const playerPay = document.getElementById('expenses-field');
+    const playCostString = playerPay.value;
+
+
+    const playCost = document.getElementById('play-cost');
+    const playString = playCost.innerText;
+    console.log(playCostString);
+
+    playCost.innerText = playCostString * 5;
 })
-
-
-
-
 document.getElementById('calculate-btn').addEventListener('click', function () {
 
 
@@ -34,7 +27,6 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     const playCost = document.getElementById('play-cost');
     const playCostString = playCost.innerText;
     const playCostFinal = parseFloat(playCostString);
-
 
     const totalCost = document.getElementById('total-cost');
     const totalCostString = totalCost.innerText;
